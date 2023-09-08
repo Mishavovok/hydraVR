@@ -1,0 +1,188 @@
+.stages {
+    display: flex;
+    margin-top: 70px;
+    position: relative;
+    justify-content: space-between;
+
+    @media(max-width: 419px) {
+        display: none;
+    }
+
+    &__item {
+        &-shadow {
+            width: 190px;
+            height: 190px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #0D0D0D52;
+
+            @media(max-width:1024px) {
+                width: 170px;
+                height: 170px;
+            }
+
+            @media(max-width: 866px) {
+                width: 140px;
+                height: 140px;
+            }
+
+            @media(max-width: 419px) {
+                margin: 0 auto;
+            }
+        }
+
+        &-bg {
+            display: flex;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(251.27deg, #c0b7e8 12.87%, #8176af 89.33%);
+
+            @media(max-width:1024px) {
+                width: 140px;
+                height: 140px;
+            }
+
+            @media(max-width: 866px) {
+                width: 110px;
+                height: 110px;
+                ;
+            }
+
+            &-txt {
+                color: #343045;
+                font-size: 60px;
+                font-weight: 700;
+                text-align: center;
+
+                @media(max-width:1024px) {
+                    font-size: 55px;
+                }
+            }
+        }
+
+        &-info {
+            display: flex;
+            align-items: center;
+
+            @media(max-width: 419px) {
+                justify-content: center;
+            }
+
+            &-img {
+                width: 30px;
+                margin-right: 10px;
+            }
+
+            &-title {
+                width: 192px;
+                font-size: 24px;
+                margin-top: 45px;
+                font-weight: 700;
+
+                @media(max-width:1024px) {
+                    width: 156px;
+                    font-size: 20px;
+                }
+
+                @media(max-width: 866px) {
+                    width: 156px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        left: -80px;
+        top: 0;
+        z-index: -1;
+
+        @media(max-width:1366px) {
+            width: 1350px;
+            top: 15px;
+        }
+
+        @media(max-width:1200px) {
+            width: 1218px;
+        }
+
+        @media(max-width:1024px) {
+            width: 1040px;
+        }
+
+        @media(max-width: 866px) {
+            width: 900px;
+            ;
+        }
+
+        @media(max-width: 419px) {
+            display: none;
+        }
+
+    }
+}
+
+.stages__slider {
+    display: none;
+
+    @media(max-width: 419px) {
+        width: 377px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .button__next {
+        width: 31px;
+        z-index: 10;
+        height: 34px;
+        border: none;
+        padding-top: 5px;
+        border-radius: 50%;
+        position: relative;
+        margin-right: -10px;
+        background: linear-gradient(267.61deg, #c0b7e8 -.6%, #8176af 98.31%);
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 44px;
+            height: 45px;
+            top: -5px;
+            left: -6px;
+            z-index: 1;
+            border-radius: 50%;
+            background: hsla(0, 0%, 5%, .32);
+        }
+    }
+
+    .button__prev {
+        width: 31px;
+        height: 34px;
+        z-index: 10;
+        border: none;
+        padding-top: 5px;
+        border-radius: 50%;
+        position: relative;
+        margin-left: -10px;
+        background: linear-gradient(267.61deg, #c0b7e8 -.6%, #8176af 98.31%);
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 44px;
+            height: 45px;
+            top: -5px;
+            left: -6px;
+            z-index: 1;
+            border-radius: 50%;
+            background: hsla(0, 0%, 5%, .32);
+        }
+    }
+}

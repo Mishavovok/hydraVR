@@ -1,0 +1,256 @@
+.advantages {
+    margin-top: 50px;
+    position: relative;
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width:419px) {
+            justify-content: center;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+
+
+
+            &-title {
+                width: 261px;
+                font-size: 36px;
+                font-weight: 700;
+
+                @media(max-width:1200px) {
+                    width: 210px;
+                    font-size: 29px;
+                }
+
+                &-size {
+                    font-weight: 300;
+                }
+            }
+
+            &-img {
+                margin-top: 50px;
+                margin-left: 20px;
+
+                @media(max-width:1024px) {
+                    width: 100px;
+                }
+
+                @media(max-width:419px) {
+                    display: none;
+                }
+            }
+
+            &-text {
+                width: 652px;
+                font-size: 16px;
+                font-weight: 400;
+
+                @media(max-width:1200px) {
+                    width: 475px;
+                    font-size: 14px;
+                }
+
+                @media(max-width:419px) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__card {
+        display: flex;
+        margin-top: 50px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        @media(max-width:419px) {
+            display: none;
+        }
+
+        &-item {
+            display: flex;
+            width: 260px;
+            flex-wrap: wrap;
+            align-items: center;
+            border-radius: 40px;
+            justify-content: center;
+            padding: 25px;
+            background: radial-gradient(50% 50% at 50% 50%, #433d60 0, #211e2e 100%);
+
+            @media(max-width:1366px) {
+                width: 235px;
+            }
+
+            @media(max-width:1200px) {
+                width: 205px;
+            }
+
+            @media(max-width:1024px) {
+                width: 260px;
+                margin-top: 20px;
+
+            }
+
+            &-img {
+                width: 150px;
+                border-radius: 50%;
+                border: 10px solid hsla(0, 0%, 5%, .32);
+            }
+
+            &-title {
+                font-size: 22px;
+                font-weight: 700;
+                border-bottom: 1px solid #C0B7E854;
+                padding-bottom: 18px;
+            }
+
+            &-text {
+                width: 291px;
+                font-size: 12px;
+                font-weight: 400;
+
+                @media(max-width:1366px) {
+                    width: 200px;
+                }
+
+            }
+
+            &-btn {
+                width: 154px;
+                height: 48px;
+                border: none;
+                font-size: 12px;
+                color: #343045;
+                font-weight: 700;
+                border-radius: 40px;
+                background: linear-gradient(90deg, #8176af, #c0b7e8);
+            }
+        }
+    }
+
+    .advantages__slider {
+        display: none;
+
+        @media(max-width:419px) {
+            width: 377px;
+            display: flex;
+            align-items: center;
+        }
+
+        .slider__item {
+            padding: 40px;
+            border-radius: 40px;
+            background: radial-gradient(50% 50% at 50% 50%, #433d60 0, #211e2e 100%);
+
+            &-img {
+                width: 190px;
+                display: block;
+                margin: 10px auto;
+                border-radius: 50%;
+                border: 10px solid hsla(0, 0%, 5%, .32);
+            }
+
+            &-title {
+                display: block;
+                margin: 15px auto;
+                font-size: 24px;
+                text-align: center;
+            }
+
+            &-text {
+                width: 250px;
+                display: block;
+                font-size: 12px;
+                margin: 10px auto;
+            }
+
+            &-btn {
+                width: 100%;
+                border: none;
+                display: block;
+                margin: 20px auto;
+                cursor: pointer;
+                padding: 10px 15px;
+                border-radius: 40px;
+                background: linear-gradient(90deg, #8176af, #c0b7e8);
+            }
+        }
+
+        .button__next {
+            width: 31px;
+            z-index: 10;
+            height: 34px;
+            border: none;
+            padding-top: 5px;
+            border-radius: 50%;
+            position: relative;
+            margin-right: -10px;
+            background: linear-gradient(267.61deg, #c0b7e8 -.6%, #8176af 98.31%);
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 43px;
+                height: 43px;
+                top: -4px;
+                left: -6px;
+                z-index: 1;
+                border-radius: 50%;
+                background: hsla(0, 0%, 5%, .32);
+            }
+        }
+
+        .button__prev {
+            width: 31px;
+            height: 34px;
+            z-index: 10;
+            border: none;
+            padding-top: 5px;
+            border-radius: 50%;
+            position: relative;
+            margin-left: -10px;
+            background: linear-gradient(267.61deg, #c0b7e8 -.6%, #8176af 98.31%);
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 43px;
+                height: 43px;
+                top: -4px;
+                left: -6px;
+                z-index: 1;
+                border-radius: 50%;
+                background: hsla(0, 0%, 5%, .32);
+            }
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        left: -75px;
+        top: 165px;
+        z-index: -1;
+
+        @media(max-width:1366px) {
+            left: -165px;
+        }
+
+        @media(max-width:1200px) {
+            left: -300px;
+        }
+
+        @media(max-width:1024px) {
+            left: -480px;
+        }
+
+        @media(max-width:419px) {
+            display: none;
+        }
+
+    }
+}

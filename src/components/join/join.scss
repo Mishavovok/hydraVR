@@ -1,0 +1,231 @@
+.bg {
+    width: 1149px;
+    z-index: 10;
+    position: relative;
+    background: #343045;
+    border-radius: 100px;
+
+    @media(max-width:1366px) {
+        width: 1075px;
+    }
+
+    @media(max-width:1200px) {
+        width: 940px;
+    }
+
+    @media(max-width:1024px) {
+        width: 780px;
+    }
+
+    @media(max-width: 866px) {
+        width: 639px;
+    }
+
+    @media(max-width: 419px) {
+        width: 376px;
+    }
+}
+
+.join {
+    width: 1150px;
+    margin-top: 70px;
+    padding: 50px 70px;
+    border-radius: 100px;
+    background: radial-gradient(50% 50% at 50% 50%, #403a5f 0, #211e2e 100%);
+
+    @media(max-width:1366px) {
+        width: 1075px;
+    }
+
+    @media(max-width:1200px) {
+        width: 940px;
+    }
+
+    @media(max-width:1024px) {
+        width: 780px;
+    }
+
+    @media(max-width: 866px) {
+        width: 639px;
+    }
+
+    @media(max-width: 419px) {
+        width: 296px;
+        padding: 25px 40px;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__line {
+        width: 40%;
+        height: 1px;
+        display: block;
+        margin: 0 auto;
+        background: linear-gradient(90deg, #b0b0b3 100%, #c0b7e8 0, #8176af 0);
+    }
+
+    &__text {
+        font-size: 36px;
+        font-weight: 300;
+        text-align: center;
+
+        @media(max-width: 419px) {
+            font-size: 28px;
+        }
+    }
+
+    &__form {
+
+        &-contact {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+
+            @media(max-width: 419px) {
+                margin: 0;
+            }
+
+            @media(max-width: 419px) {
+                display: block;
+            }
+
+            &-inp {
+                width: 500px;
+                height: 60px;
+                color: #FFFFFF;
+                padding-left: 20px;
+                border-radius: 100px;
+                background: #211e2e00;
+                border: 2px solid #FFFFFF;
+
+                &::placeholder {
+                    color: #FFFFFF;
+                }
+
+                &:focus-visible {
+                    box-shadow: inset 0 0 0.5em 0 #8f7aed, 0 0 1em 0.2em #8f7aed;
+                }
+
+                &:focus {
+                    outline: 0;
+                    outline-offset: 0;
+                }
+
+                @media(max-width:1024px) {
+                    width: 345px;
+                }
+
+                @media(max-width: 419px) {
+                    width: 270px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &-subject {
+            width: 1123px;
+            height: 60px;
+            color: #FFFFFF;
+            padding-left: 20px;
+            border-radius: 100px;
+            background: #211e2e00;
+            border: 2px solid #FFFFFF;
+
+            &::placeholder {
+                color: #FFFFFF;
+            }
+
+            &:focus-visible {
+                box-shadow: inset 0 0 0.5em 0 #8f7aed, 0 0 1em 0.2em #8f7aed;
+            }
+
+            &:focus {
+                outline: 0;
+                outline-offset: 0;
+            }
+
+            @media(max-width:1366px) {
+                width: 1049px;
+            }
+
+            @media(max-width:1200px) {
+                width: 914px;
+            }
+
+            @media(max-width:1024px) {
+                width: 754px;
+            }
+
+            @media(max-width: 866px) {
+                width: 614px;
+            }
+
+            @media(max-width: 419px) {
+                width: 270px;
+            }
+
+        }
+
+        &-txt {
+            width: 1105px;
+            color: #FFFFFF;
+            resize: none;
+            height: 200px;
+            margin-top: 25px;
+            margin-bottom: 35px;
+            padding: 20px;
+            border-radius: 40px;
+            background: #211e2e00;
+            border: 2px solid #FFFFFF;
+
+            &:focus-visible {
+                box-shadow: inset 0 0 0.5em 0 #8f7aed, 0 0 1em 0.2em #8f7aed;
+            }
+
+            &::placeholder {
+                color: #FFFFFF;
+            }
+
+            &:focus {
+                outline: 0;
+                outline-offset: 0;
+            }
+
+            @media(max-width:1366px) {
+                width: 1031px;
+            }
+
+            @media(max-width:1200px) {
+                width: 895px;
+            }
+
+            @media(max-width:1024px) {
+                width: 735px;
+            }
+
+            @media(max-width: 866px) {
+                width: 596px;
+            }
+
+            @media(max-width: 419px) {
+                width: 252px;
+            }
+        }
+
+        &-btn {
+            width: 214px;
+            margin: 0 auto;
+            display: block;
+            height: 48px;
+            border: none;
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 40px;
+            background: linear-gradient(90deg, #8176af, #c0b7e8);
+        }
+    }
+}
