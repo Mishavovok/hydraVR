@@ -32,7 +32,6 @@
             display: none;
         }
 
-        @media(max-width:419px) {}
 
         .link {
             margin-right: 30px;
@@ -51,7 +50,7 @@
             }
         }
 
-        @media(max-width:419px) {
+        @media(max-width:458px) {
             display: none;
         }
 
@@ -150,7 +149,7 @@
                 height: 34px;
             }
 
-            @media(max-width:419px) {
+            @media(max-width:458px) {
                 margin-bottom: 15px;
             }
 
@@ -195,7 +194,7 @@
     position: relative;
     z-index: 100;
 
-    @media(max-width:419px) {
+    @media(max-width:458px) {
         display: block;
     }
 

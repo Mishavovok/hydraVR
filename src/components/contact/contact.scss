@@ -8,7 +8,7 @@
     background:
         radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, .95) 0, #211e2e 100%);
 
-    @media(max-width:419px) {
+    @media(max-width:458px) {
         padding: 0;
     }
 
@@ -21,7 +21,7 @@
             width: 35px;
         }
 
-        @media(max-width:419px) {
+        @media(max-width:458px) {
             display: none;
         }
 
@@ -47,7 +47,7 @@
                 display: none;
             }
 
-            @media(max-width:419px) {
+            @media(max-width:458px) {
                 display: none;
             }
         }
@@ -55,7 +55,7 @@
         .contact__blok {
             margin-left: 15px;
 
-            @media(max-width:419px) {
+            @media(max-width:458px) {
                 display: none;
             }
 
@@ -90,7 +90,7 @@
     }
 
     &__phone {
-        @media(max-width:419px) {
+        @media(max-width:458px) {
             display: none;
         }
 
@@ -154,7 +154,7 @@
         display: flex;
         align-items: center;
 
-        @media(max-width:419px) {
+        @media(max-width:458px) {
             display: none;
         }
 
@@ -194,7 +194,7 @@
     &__slider {
         display: none;
 
-        @media(max-width:419px) {
+        @media(max-width:458px) {
             width: 377px;
             display: flex;
         }
